@@ -95,6 +95,7 @@ img {
 .menu-line {
     background-image: url("../img/menu line.svg")
 }
+
 .home-section {
     background-image: url("../img/home-bg.png");
     background-size: cover;
@@ -138,4 +139,56 @@ img {
     margin-top: 350px;
     display: flex;
     justify-content: flex-end
+}
+
+.welcome-section {
+    background-image: url("../img/welcome bg grey.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+    width: auto;
+    position: relative;
+    color: #ffffff
+}
+
+.welcome-section-content {
+    margin-top: 150px;
+    width: 45%
+}
+
+.welcome-section-content h2 {
+    font-size: 3.75em;
+    text-transform: uppercase;
+    font-weight: 300
+}
+
+.welcome-section-content h4 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #a29061
+}
+
+.welcome-section-content p {
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.16px
+}
+
+.welcome-section-button {
+    display: flex;
+    justify-content: center;
+    position: relative
+}
+
+.welcome-section-btn, .news-section-btn {
+    border: 1px solid #af9a63;
+    border-radius: 50%;
+    background-color: #af9a63;
+    font-size: 2em;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 220px;
+    height: 220px;
 }
