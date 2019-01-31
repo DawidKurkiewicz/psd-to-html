@@ -1,0 +1,97 @@
+body {
+    font: 300 16px /1.5em 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column
+}
+
+a {
+    color: #a29061;
+    text-decoration: none
+}
+
+a:hover {
+    opacity: 0.8
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+.container {
+    max-width: 1620px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden
+}
+
+.menu-header {
+    padding: 55px 0;
+    max-width: 1620px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1620px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden
+}
+
+.menu-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center
+}
+
+.menu-container li.menu::before {
+    position: absolute;
+    content: '';
+    height: 4.3rem;
+    border-left: 1.1px solid;
+    margin-top: -4rem;
+    margin-left: .6rem;
+    color: #2d3439;
+    opacity: 0.1
+}
+
+.menu-container li.active::before {
+    position: absolute;
+    content: '';
+    height: 4.3rem;
+    border-left: 1px solid;
+    margin-top: -4rem;
+    margin-left: .6rem;
+    color: #4d565d;
+    opacity: 1
+}
+
+.menu-container li {
+    margin: 0 4px;
+    display: inline-block;
+    list-style: none
+}
+
+.menu-container li a {
+    padding: 10px 10px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.2em;
+    font-weight: 400;
+    letter-spacing: 0.05px
+}
+
+.menu-container .active {
+    color: #4d565d
+}
+
+.menu-container .menu-icon a {
+    padding: 0;
+    width: 70px;
+    height: 13px
+}
+
+.menu-line {
+    background-image: url("../img/menu line.svg")
+}
