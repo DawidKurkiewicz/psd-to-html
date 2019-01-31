@@ -9,15 +9,6 @@ a {
     text-decoration: none
 }
 
-a:hover {
-    opacity: 0.8
-}
-
-img {
-    max-width: 100%;
-    height: auto
-}
-
 .container {
     max-width: 1620px;
     width: 100%;
@@ -45,10 +36,10 @@ img {
     align-items: center
 }
 
-.menu-container li.menu::before {
+li.menu::before {
     position: absolute;
     content: '';
-    height: 4rem;
+    height: 4.5rem;
     border-left: 1px solid;
     margin-top: -4rem;
     margin-left: .5rem;
@@ -56,10 +47,10 @@ img {
     opacity: 0.1
 }
 
-.menu-container li.active::before {
+li.active::before {
     position: absolute;
     content: '';
-    height: 4rem;
+    height: 4.5rem;
     border-left: 1px solid;
     margin-top: -4rem;
     margin-left: .5rem;
@@ -67,13 +58,13 @@ img {
     opacity: 1
 }
 
-.menu-container li {
+li {
     margin: 0 4px;
     display: inline-block;
     list-style: none
 }
 
-.menu-container li a {
+li a {
     padding: 10px 10px;
     display: inline-block;
     font-size: 18px;
@@ -82,11 +73,11 @@ img {
     letter-spacing: 0.05px
 }
 
-.menu-container .active {
+.active {
     color: #4d565d
 }
 
-.menu-container .menu-icon a {
+.menu-icon a {
     padding: 0;
     width: 70px;
     height: 13px
@@ -110,13 +101,13 @@ img {
     line-height: 2.5em
 }
 
-.home-section-header .passive {
+.passive {
     opacity: 0.5
 }
 
 .home-section-title {
     text-transform: uppercase;
-    margin-top: -200px;
+    margin-top: -180px;
     margin-left: 75px
 }
 
@@ -136,18 +127,16 @@ img {
 }
 
 .arrow {
-    margin-top: 350px;
+    margin-top: 400px;
     display: flex;
     justify-content: flex-end
 }
 
 .welcome-section {
     background-image: url("../img/welcome bg grey.png");
-    background-size: cover;
     background-repeat: no-repeat;
-    height: 900px;
+    height: 850px;
     width: auto;
-    position: relative;
     color: #ffffff
 }
 
@@ -178,7 +167,8 @@ img {
 .welcome-section-button {
     display: flex;
     justify-content: center;
-    position: relative
+    position: relative;
+    transform: translateY(-90px)
 }
 
 .welcome-section-btn, .news-section-btn {
@@ -191,4 +181,69 @@ img {
     text-decoration: none;
     width: 220px;
     height: 220px;
+    cursor: pointer;
+}
+
+.news-section {
+    background-image: url("../img/news bg.png");
+    background-size: cover;
+    height: 900px;
+    width: auto;
+    margin-top: -150px
+}
+
+.news-section .container {
+    display: flex;
+    justify-content: flex-end
+}
+
+.news-section-content {
+    width: 35%;
+    margin-top: 160px;
+    text-align: justify
+}
+
+.news-section-content h2 {
+    color: #4d565d;
+    font-size: 3.75em;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    width: 100%;
+    line-height: 1em
+}
+
+.news-section-content span {
+    color: #a29061;
+    font-size: 1.4em;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-bottom: 1px solid;
+    width: 100%;
+    opacity: 0.9
+}
+div .active {
+    width: 25%;
+    border-bottom: 1px solid black
+}
+.news-section-content h4 {
+    color: #4d565d;
+    font-size: 2em;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: normal;
+    word-spacing: 0.5em;
+    text-align: left
+}
+
+.news-section-content p {
+    color: #4d565d;
+    font-weight: 400;
+    letter-spacing: 0.16px
+}
+
+.news-section-button {
+    display: flex;
+    justify-content: flex-end;
 }
