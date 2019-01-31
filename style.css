@@ -340,9 +340,5 @@ footer {
     li.active::before {
         display: none
     }
-    li {
-        margin: 0 4px;
-        display: inline-block;
-        list-style: none
-    }
+  
 }
