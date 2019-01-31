@@ -16,7 +16,7 @@ a {
     overflow: hidden
 }
 
-.menu-header {
+.menu-section {
     padding: 55px 0;
     max-width: 1620px;
     display: flex;
@@ -140,25 +140,25 @@ li a {
     color: #ffffff
 }
 
-.welcome-section-content {
+.welcome-section-container {
     margin-top: 150px;
     width: 45%
 }
 
-.welcome-section-content h2 {
+.welcome-section-container h2 {
     font-size: 3.75em;
     text-transform: uppercase;
     font-weight: 300
 }
 
-.welcome-section-content h4 {
+.welcome-section-container h4 {
     font-size: 2.5em;
     text-transform: uppercase;
     font-weight: 300;
     color: #a29061
 }
 
-.welcome-section-content p {
+.welcome-section-container p {
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0.16px
@@ -182,6 +182,7 @@ li a {
     width: 220px;
     height: 220px;
     cursor: pointer;
+    z-index: 1;
 }
 
 .news-section {
@@ -197,13 +198,13 @@ li a {
     justify-content: flex-end
 }
 
-.news-section-content {
+.news-section-container {
     width: 35%;
     margin-top: 160px;
     text-align: justify
 }
 
-.news-section-content h2 {
+.news-section-container h2 {
     color: #4d565d;
     font-size: 3.75em;
     font-weight: 300;
@@ -213,7 +214,7 @@ li a {
     line-height: 1em
 }
 
-.news-section-content span {
+.news-section-container span {
     color: #a29061;
     font-size: 1.4em;
     font-weight: 300;
@@ -222,11 +223,13 @@ li a {
     width: 100%;
     opacity: 0.9
 }
+
 div .active {
     width: 25%;
     border-bottom: 1px solid black
 }
-.news-section-content h4 {
+
+.news-section-container h4 {
     color: #4d565d;
     font-size: 2em;
     font-weight: 300;
@@ -237,7 +240,7 @@ div .active {
     text-align: left
 }
 
-.news-section-content p {
+.news-section-container p {
     color: #4d565d;
     font-weight: 400;
     letter-spacing: 0.16px
@@ -246,4 +249,99 @@ div .active {
 .news-section-button {
     display: flex;
     justify-content: flex-end;
+}
+
+footer {
+    background-color: black;
+    height: 10vh;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 8px
+    }
+    .menu-section {
+        padding: 25px 0
+    }
+    .menu-container {
+        display: inline
+    }
+    .menu-container li a {
+        font-size: 9px;
+        line-height: 1.2em;
+        font-weight: 400
+    }
+    .brand img {
+        margin-left: 30px;
+        max-width: 50%
+    }
+    .home-section-header {
+        display: none
+    }
+    .home-section-title {
+        text-align: center;
+        margin-left: 10px;
+        margin-top: -10px
+    }
+    .arrow {
+        display: none
+    }
+    .welcome-section .container {
+        flex-direction: column
+    }
+    .welcome-section .welcome-section-container {
+        margin-top: 40px;
+        width: 100%;
+        text-align: center
+    }
+    .welcome-section-container p {
+        line-height: 1.4
+    }
+    .home-section {
+        height: 450px
+    }
+    .welcome-section {
+        background-image: url("../img/welcome-bg-small.png");
+        height: 400px;
+        background-size: contain
+    }
+    .news-section {
+        background-image: url("../img/news-bg-small.png");
+        height: 400px
+    }
+    .news-section-button {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+    .news-section .container {
+        flex-direction: column
+    }
+    .news-section-container {
+        width: 100%;
+        margin-top: 20%;
+        margin-right: 200px;
+        text-align: center
+    }
+    .news-section-container h4 {
+        text-align: center
+    }
+    .welcome-section-btn, .news-section-btn {
+        width: 100px;
+        height: 100px
+    }
+    .mobile-hidden {
+        display: none
+    }
+    li.menu::before {
+        display: none
+    }
+    li.active::before {
+        display: none
+    }
+    li {
+        margin: 0 4px;
+        display: inline-block;
+        list-style: none
+    }
 }
